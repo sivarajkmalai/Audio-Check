@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vine Boom Sound</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1e1e1e;
+        }
+        button {
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff9900;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #cc7a00;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="playSound()">🔊 Play Vine Boom</button>
+    <audio id="vineBoom">
+        <source src="https://res.cloudinary.com/dgeajomdw/video/upload/v1739593526/vine-boom_1_xuumbf.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function playSound() {
+            let audio = document.getElementById("vineBoom");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
